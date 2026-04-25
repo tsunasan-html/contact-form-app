@@ -2,19 +2,19 @@ import Link from 'next/link';
 
 export default function ThanksPage() {
   return (
-    <main className="min-h-screen bg-slate-950 px-6 py-16 text-slate-100">
-      <div className="mx-auto max-w-2xl">
+    <main className="min-h-screen bg-slate-950 px-0 py-8 text-slate-100 sm:px-6 sm:py-16">
+      <div className="mx-auto w-full max-w-2xl px-6 sm:px-0">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-slate-400">
           Contact Form
         </p>
 
-        <h1 className="mb-8 text-4xl font-bold tracking-tight">
+        <h1 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">
           Message sent
         </h1>
 
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl">
+        <div className="bg-transparent p-0 shadow-none sm:rounded-3xl sm:border sm:border-slate-800 sm:bg-slate-900/80 sm:p-8 sm:shadow-2xl">
           <div className="space-y-6">
-            <div className="rounded-2xl border border-slate-800 bg-slate-800/50 p-6">
+            <div className="rounded-2xl border border-slate-800 bg-slate-800/50 p-5 sm:p-6">
               <p className="text-lg font-semibold text-slate-100">
                 Thank you for your message.
               </p>

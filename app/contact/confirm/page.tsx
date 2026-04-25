@@ -72,17 +72,17 @@ export default function ConfirmPage() {
   }
 
   return (
-    <main className="min-h-screen bg-slate-950 px-6 py-16 text-slate-100">
-      <div className="mx-auto max-w-2xl">
+    <main className="min-h-screen bg-slate-950 px-0 py-8 text-slate-100 sm:px-6 sm:py-16">
+      <div className="mx-auto w-full max-w-2xl px-6 sm:px-0">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-slate-400">
           Contact Form
         </p>
 
-        <h1 className="mb-8 text-4xl font-bold tracking-tight">
+        <h1 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">
           Confirm your message
         </h1>
 
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl">
+        <div className="bg-transparent p-0 shadow-none sm:rounded-3xl sm:border sm:border-slate-800 sm:bg-slate-900/80 sm:p-8 sm:shadow-2xl">
           <div className="divide-y divide-slate-800">
             <div className="grid gap-2 py-5 sm:grid-cols-3">
               <p className="text-sm font-semibold text-slate-400">Name</p>
@@ -93,14 +93,14 @@ export default function ConfirmPage() {
 
             <div className="grid gap-2 py-5 sm:grid-cols-3">
               <p className="text-sm font-semibold text-slate-400">Email</p>
-              <p className="text-base text-slate-100 sm:col-span-2">
+              <p className="break-words text-base text-slate-100 sm:col-span-2">
                 {form.email}
               </p>
             </div>
 
             <div className="grid gap-2 py-5 sm:grid-cols-3">
               <p className="text-sm font-semibold text-slate-400">Message</p>
-              <p className="whitespace-pre-wrap text-base leading-7 text-slate-100 sm:col-span-2">
+              <p className="whitespace-pre-wrap break-words text-base leading-7 text-slate-100 sm:col-span-2">
                 {form.message || 'No message'}
               </p>
             </div>
