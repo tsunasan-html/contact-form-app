@@ -1,0 +1,14 @@
+name: Supabase Health Check
+
+on:
+  schedule:
+    - cron: '0 0 * * 1,4'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call health check API
+        run: curl -f https://contact-form-app-beryl.vercel.app/api/contact/health
