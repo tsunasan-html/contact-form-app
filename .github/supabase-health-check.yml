@@ -1,0 +1,15 @@
+name: Supabase Health Check
+
+on:
+  schedule:
+    # 月曜・木曜（UTC 00:00 = 日本時間 09:00）
+    - cron: '0 0 * * 1,4'
+  workflow_dispatch: # 手動実行もできる
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call health check API
+        run: curl -f https://contact-form-app-beryl.vercel.app/api/contact/health
